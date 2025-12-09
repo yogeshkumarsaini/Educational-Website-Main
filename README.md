@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Educational-Website-Main
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Educational-Website-Main is a responsive web application built with React that showcases a modern educational portal. The site highlights courses, company information, testimonials, and more. It is structured into modular and reusable components for clear organization and scalability.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Modern UI/UX:** Built using React and Bootstrap for a professional look.
+- **Homepage Sections:**
+  - Header and Footer for navigation and site info.
+  - Hero Section for impressive landing visuals.
+  - Company Section showcasing partner info or stats.
+  - About Us for organizational background.
+  - Courses and Free Course sections to display educational offerings.
+  - Choose Us and Features emphasize unique selling points.
+  - Testimonials boost trust for visitors.
+  - Newsletter signup for user engagement.
+- **Responsive Design:** Works across desktop, tablet, and mobile devices.
+- **Carousel, Icons, and Animations:** Slick carousel for sliders, Remix icons for graphics.
 
-### `npm start`
+## Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend:** [React](https://reactjs.org/)
+- **UI Components:** [Bootstrap](https://getbootstrap.com/) and [Remix Icon](https://remixicon.com/)
+- **Slider/Carousel:** [Slick Carousel](https://react-slick.neostack.com/)
+- **CSS:** Custom (index.css), Bootstrap, Slick Carousel styles
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v12+ recommended)
+- npm (comes with Node.js)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yogeshjvcsolutions/Educational-Website-Main.git
+   cd Educational-Website-Main
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Running the Application
 
-### `npm run eject`
+To start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+```
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+src/
+├── components/
+│   ├── About-us/
+│   ├── Choose-us/
+│   ├── Company-section/
+│   ├── Courses-section/
+│   ├── Feature-section/
+│   ├── Footer/
+│   ├── Free-course-section/
+│   ├── Header/
+│   ├── Hero-Section/
+│   ├── Newsletter/
+│   ├── Testimonial/
+├── pages/
+│   └── Home.js        # Main homepage layout
+├── App.js
+├── index.js
+├── index.css
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **components/**: Contains all UI and layout components.
+- **pages/Home.js**: Assembles components to create the homepage.
+- **App.js**: Root App component.
+- **index.js**: Entry point; renders App inside React’s StrictMode.
 
-## Learn More
+## Customization
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- To add or update Courses, modify the relevant courses component.
+- Branding, text, and images can be customized in sections like AboutUs, HeroSection, Footer, etc.
+- You can add more pages by creating new files inside the **pages/** directory and updating `App.js` and routing logic as needed.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT Licensed](LICENSE).
